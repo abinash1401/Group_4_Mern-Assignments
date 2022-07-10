@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_4</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var elements=Number(prompt('how many elements you want'));
+    var arr=[];
+    for(let i=0;i<elements;i++){
+        let num=Number(prompt(`enter ${i} element`));
+        arr.push(num);
+    }
+    console.log(arr);
+    const biggestno=(value)=>{
+        let big=0;
+        for(let i=0;i<value.length;i++){
+            if(value[i]>big){
+                big=value[i];
+            }
+        }
+        return big;
+    }
+    console.log(biggestno(arr));
+</script>
+</html>

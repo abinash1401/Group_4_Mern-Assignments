@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question_2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function sum(arr,num){
+        var sum=0;
+        var count=0; 
+        for( i=0;i<elements;i++){
+            if(arr[i]<0){
+                sum=sum+arr[i];
+                count++;
+            }
+        }
+        console.log(`sum is ${sum}`);
+        a=sum/count;
+        console.log(`average is ${a}`);
+    }
+    var elements=Number(prompt('no. elements you want'));
+    var arr=[];
+    for(let i=0;i<elements;i++){
+        let num=Number(prompt(`enter ${i} element`));
+        arr.push(num);
+    }
+    console.log(arr);
+    sum(arr,elements);
+</script>
+</html>
