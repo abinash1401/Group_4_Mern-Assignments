@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+    body {
+            background-color: rgb(166, 164, 164)
+        }
+        .form_container {
+            text-align: center;
+            width: 70%;
+            height: 100%;
+            margin: auto;
+            padding: 60px 3px 60px 60px;
+            background-color: white;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+            font-style: normal;  
+            color: rgb(11, 2, 50);
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        #div_1 {
+            width: 30%;
+            height: 50%;
+        }
+
+        input[type=text] {
+            width: 350px;
+            height: 30px;
+            border-radius: 20px;
+            border-style: hidden;
+            margin-top: 20px;
+            background-color: rgb(228, 219, 236);
+        }
+
+        #div_2 {
+            width: 30%;
+            height: 30%;
+        }
+
+        input[type=email] {
+            width: 350px;
+            height: 30px;
+            border-radius: 20px;
+            border-style: hidden;
+            margin-top: 20px;
+            background-color: rgb(228, 219, 236);
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        #div_3 {
+            width: 30%;
+            height: 50%;
+        }
+
+        input[type=number] {
+            width: 350px;
+            height: 30px;
+            border-radius: 20px;
+            border-style: hidden;
+            margin-top: 20px;
+            background-color: rgb(228, 219, 236);
+        }
+
+        #div_4 {
+            width: 30%;
+            height: 50%;
+            margin-top: 15px;
+            color: black;
+        }
+
+        #div_5 {
+            width: 30%;
+            height: 50%;
+        }
+
+        textarea {
+            width: 830px;
+            height: 100px;
+            border-radius: 20px;
+            border-style: hidden;
+            margin-top: 20px;
+            background-color: rgb(228, 219, 236);
+        }
+
+        #div_6 {
+            width: 30%;
+            height: 50%;
+        }
+
+        #div_7 {
+            width: 30%;
+            height: 50%;
+        }
+        input[type=password] {
+            width: 350px;
+            height: 30px;
+            border-radius: 20px;
+            border-style: hidden;
+            margin-top: 20px;
+            background-color: rgb(228, 219, 236);
+        }
+
+        #div_8 {
+            width: 30%;
+            height: 50%;
+        }
+
+        #div_9 {
+            margin-top: 22px;
+            color: rgb(8, 1, 16);
+            font-size: 20px;
+        }
+
+        input[type=submit] {
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background-color: rgb(16, 229, 37);
+            color: white;
+            border-radius: 15px;
+            font-size: 20px;
+            margin-top: 30px;
+            border-style: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="form_container">
+        <div class="error_msg" style="display:none"></div>
+        <form>
+            <h1>REGISTRATION FORM</h1>
+            <div id="div_1">
+                <input type="text" name="full_name" id="full_name" value="" placeholder="  Full Name"></input>
+            </div>
+            <div id="div_2">
+                <input type="email" email="email" id="email" value="" placeholder="  Email"></input>
+            </div>
+            <div class="clearfix"></div>
+            <div id="div_3">
+                <input type="number" phone="phone_number" id="phone_number" value="" placeholder="  Phone Number"></input>
+            </div>
+            <div id="div_4">
+                <label>Gender :</label>
+                <input type="radio" name="gender" id="gender_1" value="male">Male</input>
+                <input type="radio" Name="gender" id="gender_2" value="Female">Female</input>
+                <input type="radio" name="gender" id="gender_3" value="Other">Other</input>
+            </div>
+            <div id="div_5">
+                <textarea cols="100" rows="10" id="address" placeholder=" Address"></textarea>
+            </div>
+            <div id="div_6">
+                <input type="number" Name="pincode" id="pincode" value="" placeholder="  Pincode"> </input>
+            </div>
+            <div id="div_7">
+                <input type="password" name="Password" id="password" value="" placeholder="  Password"> </input>
+            </div>
+            <div class="clearfix"></div>
+            <div id="div_8">
+                <input type="password" name="Confirm Password" id="confirm_password" value="" placeholder=" Confirm Password"></input>
+            </div>
+            <div id="div_9">
+                <input type="checkbox" name="I agree" id="i_agree" value="yes">I agree </input>
+            </div>
+            <div class="clearfix"></div>
+            <div>
+                <input type="submit" name="submit" id="submit" value="submit"> </input>
+            </div>
+        </form>
+    </div>
+    <br><br>
+    <div style="align-content: center;">
+        Name :<span id="show_name"></span>
+        <br> email :<span id="show_email"></span> </br>
+        phone number : <span id="show_phone_number"></span>
+        <br> gender : <span id="show_gender"></span> </br>
+        address :<span id="show_address"></span>
+        <br> pincode :<span id="show_pincode"></span> </br>
+        password :<span id="show_password"></span>
+        <br> confirm password :<span id="show_confirmpassword"></span> </br>
+        i agree : <span id="show_checked"></span>
+    </div>
+    <script src="./form.js"></script>
+</body>
+</html>
