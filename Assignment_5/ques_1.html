@@ -20,36 +20,36 @@ person.phone = rl.question("What is your phone: ");
 person.basicSalary = rl.question("What is your Basic Salary: ");
 console.log(person);
 
-    // let Employee ={
-    //     Name:'Abinash Samantaray',
-    //     email:'abinashsamantaray555@gmail.com',
-    //     Phone:9078624238,
-    //     Basic_Salary:60000,
-    //     totalsal:function(){
-    //         let HRA=1000;
-    //         let SA=1000;
-    //         totalsal=this.Basic_Salary+0.15*HRA+0.2*SA;
+    let Employee ={
+        Name:'Abinash Samantaray',
+        email:'abinashsamantaray555@gmail.com',
+        Phone:9078624238,
+        Basic_Salary:60000,
+        totalsal:function(){
+            let HRA=1000;
+            let SA=1000;
+            totalsal=this.Basic_Salary+0.15*HRA+0.2*SA;
             
-    //         if(  this.Basic_Salary > 40000 && this.Basic_Salary<50000){
-    //          totalsal=totalsal-(0.1*totalsal);
-    //         }
-    //         else if(  this.Basic_Salary > 50000 && this.Basic_Salary<70000){
-    //             totalsal=totalsal-(0.15*totalsal);
-    //         }
-    //         else if(  this.Basic_Salary > 70000 && this.Basic_Salary<80000){
-    //             totalsal=totalsal-(0.2*totalsal);
-    //         }
-    //         else if(  this.Basic_Salary > 80000){
-    //             totalsal=totalsal-(0.3*totalsal);
-    //         }
-    //         return totalsal;
-    //     } 
-    // }
-    // console.log(`Employee name = ${Employee.Name}`)
-    // console.log(`Employee email = ${Employee.email}`)
-    // console.log(`Employee phone no. = ${Employee.Phone}`)
-    // console.log(`Employee basic salary = ${Employee.Basic_Salary}`)
-    // console.log(`Salary after deduction = ${Employee.totalsal()}`)
+            if(  this.Basic_Salary > 40000 && this.Basic_Salary<50000){
+             totalsal=totalsal-(0.1*totalsal);
+            }
+            else if(  this.Basic_Salary > 50000 && this.Basic_Salary<70000){
+                totalsal=totalsal-(0.15*totalsal);
+            }
+            else if(  this.Basic_Salary > 70000 && this.Basic_Salary<80000){
+                totalsal=totalsal-(0.2*totalsal);
+            }
+            else if(  this.Basic_Salary > 80000){
+                totalsal=totalsal-(0.3*totalsal);
+            }
+            return totalsal;
+        } 
+    }
+    console.log(`Employee name = ${Employee.Name}`)
+    console.log(`Employee email = ${Employee.email}`)
+    console.log(`Employee phone no. = ${Employee.Phone}`)
+    console.log(`Employee basic salary = ${Employee.Basic_Salary}`)
+    console.log(`Salary after deduction = ${Employee.totalsal()}`)
     </script>
 </body>
 </html>
